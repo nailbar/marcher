@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type='text/javascript' src='marcher.js'></script>
+<script type='text/javascript' src='tests.js'></script>
+<script type='text/javascript'>
+var canvas, c;
+function init() {
+  canvas = document.getElementById("canvas");
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  c = canvas.getContext("2d");
+  
+//   tPointTest()
+//   drawBoxTest();
+//   drawBoxTest2();
+//   drawBoxTest3();
+//   paintWorldTest();
+//  paintWorldTest2();
+  var test = new shooterTest();
+  test.loop();
+}
+</script>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+</style>
+</head>
+<body onload='init()'>
+<canvas id='canvas'></canvas>
+</body>
+</html>
